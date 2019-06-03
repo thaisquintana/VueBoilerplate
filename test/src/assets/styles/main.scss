@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,300,400,500,600,700&display=swap');
+
+@import './colors.scss';
+@import './animations.scss';
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  margin: 0;
+  background: rgb(219, 225, 239);
+  height: 72.6vh;
+  background: linear-gradient(
+    4deg,
+    rgba(219, 225, 239, 1) 0%,
+    rgba(231, 235, 243, 1) 37%,
+    rgba(248, 249, 251, 1) 100%
+  );
+}
+
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 684px;
+  top: 346px;
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: $spun-pearl transparent transparent transparent;
+    &:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    &:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    &:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+  }
+}
+
+.button-receipts {
+  position: absolute;
+  right: -83px;
+  height: 324px;
+  width: 121px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.welcome {
+  &-title {
+    text-align: center;
+    color: $bombay;
+    font-weight: 100;
+    margin-top: 200px;
+    font-size: 1.5rem;
+    p {
+      margin: 0;
+    }
+    b {
+      font-weight: 300;
+    }
+  }
+  &-graphic {
+    text-align: center;
+    margin-top: 200px;
+    animation-delay: 1s;
+    img {
+      width: 44%;
+    }
+  }
+}
+
+.header-invoices {
+  position: absolute;
+  top: 34px;
+  left: 28px;
+  &__title {
+    text-align: center;
+    color: $bombay;
+    font-weight: 100;
+    margin-top: -36px;
+    font-size: 0.8rem;
+    margin-left: 47px;
+    p {
+      margin: 0;
+    }
+    b {
+      font-weight: 300;
+    }
+  }
+}
+
+.cards {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  .persist {
+    perspective: 100px;
+    perspective-origin: 50% -3%;
+  }
+  &-list {
+    list-style: none;
+    .first {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      transform: translate3d(0%, 0%, -3px);
+      z-index: 4;
+    }
+    .second {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      transform: translate3d(0%, 11%, -8px);
+      z-index: 3;
+      opacity: 0.3;
+    }
+    .third {
+      position: absolute;
+      top: 20%;
+      left: 0;
+      transform: translate3d(0%, 19%, -11px);
+      z-index: 2;
+      opacity: 0.2;
+    }
+    .forth {
+      position: absolute;
+      top: 20%;
+      left: 0px;
+      transform: translate3d(0%, 30%, -17px);
+      z-index: 1;
+      opacity: 0.1;
+    }
+    .cards-item {
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: $white;
+      height: 241px;
+      width: 100%;
+      border-radius: 5px;
+      padding: 46px;
+      transition: 0.2s;
+      &:first-child {
+        opacity: 1;
+      }
+      .cards-item__header {
+        .cards-item__header-title {
+          display: flex;
+          justify-content: space-between;
+          .logo {
+            img {
+              width: 70%;
+            }
+          }
+          .pill-alert {
+            border-radius: 33px;
+            border: 2px solid $colonial-white;
+            color: $colonial-white;
+            padding: 9px 12px;
+            line-height: 0.7;
+            height: 5px;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 0.6rem;
+          }
+        }
+        .cards-item__header-subtitle {
+          display: flex;
+          justify-content: space-between;
+          .invoice,
+          .amount {
+            h4 {
+              font-weight: 400;
+              color: $iron;
+              margin-top: 14px;
+              margin-bottom: 5px;
+              font-size: 0.7rem;
+            }
+            span {
+              display: flex;
+              justify-content: right;
+              font-weight: 300;
+              color: $havelock-blue;
+              font-size: 1.2rem;
+              label {
+                font-size: 0.8rem;
+                line-height: 2.6;
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .cards-item__body {
+        width: 80%;
+        .category,
+        .detail {
+          display: flex;
+          justify-content: space-between;
+          .buyer,
+          .seller,
+          .start,
+          .address {
+            h4 {
+              font-weight: 400;
+              color: $iron;
+              margin-top: 14px;
+              margin-bottom: 5px;
+              font-size: 0.7rem;
+            }
+            span {
+              display: flex;
+              justify-content: right;
+              font-weight: 300;
+              color: $shady-lady;
+              font-size: 1rem;
+            }
+            .spacing {
+              letter-spacing: -0.7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.all-receipts {
+  .receipts {
+    width: 145vh;
+    height: 43.8vh;
+    position: absolute;
+    top: -46px;
+    left: 572px;
+    padding: 46px;
+    display: flex;
+    z-index: 13;
+    margin: 0 20px;
+    &-buyer,
+    &-seller {
+      border-radius: 5px;
+      margin-top: 0;
+      padding: 46px;
+      background-color: $white;
+      margin: 0 12px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+
+      .buyer-header,
+      .seller-header {
+        h4 {
+          font-weight: 300;
+          color: $havelock-blue;
+          font-size: 1.2rem;
+          margin-top: -15px;
+          margin-bottom: 10px;
+        }
+        span {
+          font-weight: 300;
+          color: $shady-lady;
+          font-size: 0.6rem;
+          display: block;
+        }
+      }
+      hr {
+        margin-top: 20px;
+        border: 0.8px solid;
+        border-color: $hint-of-head;
+      }
+      .buyer-details,
+      .seller-details {
+        display: flex;
+        justify-content: space-between;
+        .buyer-category,
+        .seller-category {
+          width: 40%;
+        }
+        ul {
+          padding: 0;
+          list-style: none;
+          color: $iron;
+          font-weight: 400;
+          font-size: 0.6rem;
+          .trade {
+            margin-top: 17px;
+          }
+        }
+        .buyer-types,
+        .seller-types {
+          li {
+            color: $shady-lady;
+            margin-left: 30px;
+            line-height: 1.5;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-invoices {
+  text-align: center;
+}
+
+.wallet {
+  position: fixed;
+  bottom: -512px;
+  display: flex;
+  right: -462px;
+}
+
+//media queries
+@media only screen and (min-width: 900px) {
+  body {
+    height: 76.6vh;
+  }
+  .welcome {
+    &-title {
+      margin-top: 126px;
+    }
+    &-graphic {
+      text-align: center;
+      margin-top: 128px;
+      img {
+        width: 65%;
+      }
+    }
+  }
+  .lds-ring {
+    left: 460px;
+    top: 236px;
+  }
+  .cards {
+    width: 38%;
+    left: 268px;
+    top: 110px;
+    .cards-list {
+      margin: 0 auto;
+      .cards-item {
+        .cards-item__body {
+          width: 74%;
+          .category,
+          .detail {
+            .buyer,
+            .seller,
+            .start,
+            .address {
+              h4 {
+                font-size: 0.6rem;
+              }
+              span {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-invoices {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    height: 81.7vh;
+  }
+  .welcome-title {
+    font-size: 1.8rem;
+  }
+  .cards {
+    left: 357px;
+    top: 166px;
+  }
+  .lds-ring {
+    left: 615px;
+    top: 307px;
+  }
+  .all-receipts {
+    .receipts {
+      left: 514px;
+      height: 45.8vh;
+    }
+  }
+  .wallet {
+    bottom: -484px;
+  }
+  .footer-invoices {
+    margin-top: 258px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    height: 72.6vh;
+  }
+  .welcome {
+    &-title {
+      margin-top: 200px;
+    }
+    &-graphic {
+      margin-top: 150px;
+      img {
+        width: 44%;
+      }
+    }
+  }
+  .lds-ring {
+    left: 684px;
+    top: 346px;
+  }
+  .cards {
+    left: 400px;
+    top: 191px;
+  }
+  .footer-invoices {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  body {
+    height: 79.4vh;
+  }
+  .welcome {
+    &-title {
+      font-size: 1.8rem;
+    }
+  }
+  .cards {
+    left: 674px;
+    top: 304px;
+    width: 26%;
+  }
+  .header-invoices {
+    .header-invoices__title {
+      margin-top: -38px;
+      font-size: 1rem;
+    }
+  }
+  .lds-ring {
+    left: 923px;
+    top: 449px;
+  }
+  .all-receipts {
+    .receipts {
+      height: 32.8vh;
+      left: 524px;
+    }
+  }
+  .wallet {
+    bottom: -567px;
+  }
+  .footer-invoices {
+    margin-top: 375px;
+  }
+}

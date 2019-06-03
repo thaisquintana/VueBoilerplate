@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20.5" cy="20.5" r="20.5"></circle>
+        <filter x="-18.3%" y="-11.0%" width="136.6%" height="136.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0196078431   0 0 0 0 0.454901961   0 0 0 0 1  0 0 0 0.32184222 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(4.000000, 1.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#0574FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group" transform="translate(14.000000, 13.000000)" stroke="#FFFFFF">
+                <path d="M1.33180138,1.01098876 C6.39398752,3.47763435 9.48412227,4.91259766 9.63623047,4.91259766 C10.4254134,4.91259766 10.5565359,6.06623928 10.565839,9.91259766 L12.1362305,9.91259766 C12.4123728,9.91259766 12.6362305,9.68874003 12.6362305,9.41259766 L12.6362305,1.41259766 C12.6362305,1.13645528 12.4123728,0.912597656 12.1362305,0.912597656 L1.62965088,0.912597656 C1.52117419,0.912597656 1.41700572,0.947805196 1.33180138,1.01098876 Z M9.52346635,5.89969971 C9.55726246,5.90793259 9.59479024,5.91259766 9.63623047,5.91259766 C9.61127708,5.91259766 9.57793896,5.9080007 9.53598349,5.89870967 Z" id="Rectangle"></path>
+                <rect id="Rectangle" transform="translate(8.136230, 9.912598) rotate(18.000000) translate(-8.136230, -9.912598) " x="7.63623047" y="9.91259766" width="1" height="1" rx="0.5"></rect>
+                <path d="M1.20774271,1.10136289 C1.14253611,1.07157793 1.07168714,1.0561628 1,1.0561628 C0.723857625,1.0561628 0.5,1.28002043 0.5,1.5561628 L0.5,10.3573937 C0.5,10.5531307 0.61421496,10.7308678 0.792257285,10.8121936 L9.71657369,14.8886273 C9.7817803,14.9184123 9.85262927,14.9338274 9.92431641,14.9338274 C10.2004588,14.9338274 10.4243164,14.7099698 10.4243164,14.4338274 L10.4243164,5.63259652 C10.4243164,5.43685954 10.3101014,5.25912247 10.1320591,5.1777966 L1.20774271,1.10136289 Z" id="Rectangle"></path>
+            </g>
+        </g>
+    </g>
+</svg>
